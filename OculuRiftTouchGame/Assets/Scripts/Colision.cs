@@ -12,7 +12,7 @@ public class Colision : MonoBehaviour {
         Count countComponent = textmeshPro.GetComponent<Count>();
         countComponent.count += 1;
         textmeshPro.SetText("punteo:{0}", countComponent.count);
-        Destroy(col.gameObject);
+        Destroy(gameObject);
 
     }
 }
