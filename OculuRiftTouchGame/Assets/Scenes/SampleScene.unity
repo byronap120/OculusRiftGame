@@ -460,6 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc402c9c5d8551449e919085a69e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textmeshPro: {fileID: 1572624066}
 --- !u!1 &560455994
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc402c9c5d8551449e919085a69e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textmeshPro: {fileID: 1572624066}
 --- !u!1 &631794404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100014, guid: ce816f2e6abb0504092c23ed9b970dfd,
@@ -1130,7 +1132,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.979
+      value: 3.12
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1602,6 +1604,7 @@ GameObject:
   - component: {fileID: 1572624068}
   - component: {fileID: 1572624067}
   - component: {fileID: 1572624066}
+  - component: {fileID: 1572624071}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -1789,6 +1792,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0.5424547, y: 1.7526473}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1572624071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572624065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1655cd204526aa84d9e126ec299149f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1 &1608379822 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 168962, guid: ce816f2e6abb0504092c23ed9b970dfd,
@@ -1943,3 +1958,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc402c9c5d8551449e919085a69e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textmeshPro: {fileID: 1572624066}

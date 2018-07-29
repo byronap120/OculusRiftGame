@@ -1,22 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Colision : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+    public TextMeshPro textmeshPro;
 
     void OnCollisionEnter(Collision col)
     {
-            Destroy(col.gameObject);
+        Count countComponent = textmeshPro.GetComponent<Count>();
+        countComponent.count += 1;
+        textmeshPro.SetText("punteo:{0}", countComponent.count);
+        Destroy(col.gameObject);
+
     }
 }
