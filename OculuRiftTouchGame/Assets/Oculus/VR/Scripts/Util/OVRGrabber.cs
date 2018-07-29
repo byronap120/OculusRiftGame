@@ -27,7 +27,10 @@ using UnityEngine;
 /// </summary>
 [RequireComponent(typeof(Rigidbody))]
 public class OVRGrabber : MonoBehaviour
+
 {
+
+    public float throwGain = 1.0f;
     // Grip trigger thresholds for picking up objects, with some hysteresis.
     public float grabBegin = 0.55f;
     public float grabEnd = 0.35f;
@@ -335,6 +338,7 @@ public class OVRGrabber : MonoBehaviour
 			Vector3 linearVelocity = trackingSpace.orientation * OVRInput.GetLocalControllerVelocity(m_controller);
 			Vector3 angularVelocity = trackingSpace.orientation * OVRInput.GetLocalControllerAngularVelocity(m_controller);
 
+            linearVelocity *= throwGain;
             GrabbableRelease(linearVelocity, angularVelocity);
         }
 
